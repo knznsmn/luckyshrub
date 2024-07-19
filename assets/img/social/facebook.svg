@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   id="svg85"
+   sodipodi:docname="facebook.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs89" />
+  <sodipodi:namedview
+     id="namedview87"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.6445312"
+     inkscape:cx="173.6057"
+     inkscape:cy="256.30404"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg85" />
+  <g
+     id="icomoon-ignore" />
+  <path
+     d="M292 135.999h60v-72.001h-60c-46.319 0-84.001 37.683-84.001 84.001v36h-48.001v72h48v192.002h72v-192.002h60l12-72h-72v-36c0-6.505 5.495-12 12-12z"
+     id="path83"
+     style="fill:#1cb068;fill-opacity:1" />
+</svg>
