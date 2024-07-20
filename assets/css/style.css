@@ -1,5 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
-/* @import url(../fonts/Montserrat-VariableFont_wght.ttf); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     --green-darkest: hsl(151, 73%, 10%);
     --green-darker: hsl(151, 73%, 15%);
