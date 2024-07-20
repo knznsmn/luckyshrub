@@ -1,11 +1,11 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
 /* @import url(../fonts/Montserrat-VariableFont_wght.ttf); */
 :root {
-    --green-darkest: hsl(151, 73, 10%);
+    --green-darkest: hsl(151, 73%, 10%);
     --green-darker: hsl(151, 73%, 15%);
     --green-dark: hsl(151, 73%, 20%);
     --green: hsl(151, 73%, 29%);
-    --green-light: hsl(151, 73%, 40%);
+    --green-light: hsl(151, 73%, 60%);
     --green-lighter: hsl(151, 73%, 90%);
     --green-lightest: hsl(151, 73%, 95%);
 
@@ -19,10 +19,9 @@
 }
 /* General Style */
 body {
-    width: 100vw;
+    min-width: 320px;
     background-color: white;
     font-family: 'Montserrat', sans-serif;
-    font-weight: regular;
     font-style: normal;
     font-size: 12px;
     color: var(--green-dark);
@@ -30,16 +29,22 @@ body {
 img {
     width: 100%;
 }
+img:hover {
+    scale: 1.2;
+    transition: all .5s ease-in-out;;
+}
 h2 {
     font-size: 2.5rem;
 }
 h3 {
     font-size: 2rem;
     line-height: 1.8rem;
+    border-bottom: 2px solid var(--green-light);
+    padding-bottom: 1rem;
 }
 p {
     opacity: .8;
-    margin: 1rem auto;
+    margin: .5rem;
 }
 a {
     text-decoration: none;
@@ -67,10 +72,13 @@ button {
 button:hover {
     color: var(--green-lighter);
     scale: .9;
+    transition: all .2s ease-in-out;
 }
-.ellipsis {
-    fill: var(--green-dark);
-    width: 10px;
+hr {
+    width: 50%;
+    border: 1px solid var(--green-light);
+    margin-top: .5rem;
+
 }
 
 /* Header */
@@ -85,6 +93,7 @@ header {
 }
 
 nav {
+    margin: 0 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,6 +101,7 @@ nav {
 nav ul {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 nav ul li {
     list-style: none;
@@ -122,6 +132,18 @@ li>h1 {
     justify-content: center;
     align-items: center;
     color: white;
+    section {
+        background-color: hsla(170, 50%, 40%, .5);
+        max-width: calc(var(--contain) / 1.618);
+        margin: 2rem;
+        padding: 2rem;
+        border-radius: 2rem 0;
+        text-align: center;
+    }
+}
+.hero span {
+    color: var(--green-lighter);
+    font-weight: 900;
 }
 
 /* Intro */
@@ -130,6 +152,18 @@ li>h1 {
     padding: 2rem;
     max-width: var(--contain);
     display: flex;
+    h3 {
+        width: 50%;
+        border-bottom: 0;
+    }
+    p {
+        width: 50%;
+        border-left: .15rem solid var(--green-lighter);
+        padding-left: 1rem;
+    }
+}
+.intro span {
+    color: var(--green-light);
 }
 
 /* Featured */
@@ -142,25 +176,28 @@ li>h1 {
     flex-direction: column;
     align-items: center;
 }
-#featured div {
-    display: flex;
+#featured>div {
     width: 100%;
+    display: flex;
     justify-content: space-around;
-}
-#featured div img {
-    padding: .25rem;
-    border-radius: 1rem 0;
+
+    img {
+        width: 33%;
+        padding: .25rem;
+        border-radius: 1rem 0;
+    }
 }
 
 /* Services */
 #services {
-    margin: 3rem auto;
+    margin: 1rem auto;
     max-width: var(--contain);
     padding: 1rem;
     display: flex;
     align-items: center;
 }
 #services>div {
+    margin: 2rem;
     width: 100%;
     section {
         display: flex;
@@ -200,6 +237,15 @@ li>h1 {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    div {
+        display: flex;
+    }
+    img {
+        width: 10rem;
+        margin: 1rem;
+        border: 1rem solid var(--green-lighter);
+        border-radius: 1rem 0;
+    }
 }
 
 /* Ribbon */
@@ -211,40 +257,47 @@ li>h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    h3 {
+        border-bottom: 0;
+    }
 }
 
 /* Contact */
-#contact {
+#contact section {
     max-width: var(--contain);
     margin: 1rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-#contact section {
-    margin: 1rem;
-    padding: 1rem;
-    text-align: center;
-}
-#contact section:nth-child(1) {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    img {
-        margin: 1rem;
-    }
-}
-#contact button {
+
+    button {
     margin: 1rem;
     padding: 1rem;
     border-radius: 2rem;
+    }
 }
 
 /* Footer */
 footer {
+    max-width: var(--contain);
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: .8rem;
+    justify-content: space-between;
+    align-items: end;
+    font-size: .75rem;
+
+    a {
+        text-transform: none;
+        font-size: .6rem;
+    }
+    img {
+        width: 2rem;
+        margin: 1rem;
+    }
+    small {
+        border-top: solid .25rem var(--green);
+        padding-top: .5rem;
+        margin: 1rem;
+    }
 }
